@@ -48,9 +48,9 @@ body {
 
 @keyframes hat {
   from {
-    transform: translateY(-10%) rotateZ(0deg);
+    transform: translateY(0%) rotateZ(0deg);
   }
   to {
-    transform: translateY(40%) rotateZ(10deg);
+    transform: translateY(40%) rotateZ(20deg);
   }
 }

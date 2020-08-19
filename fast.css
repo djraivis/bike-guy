@@ -10,9 +10,38 @@ body {
   text-align: center;
 }
 
-#right-weel,
+#hat {
+  animation: hat 1.4s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes hat {
+  from {
+    transform: translateY(-30%) rotateZ(0deg);
+  }
+  to {
+    transform: translateY(120%) rotateZ(30deg);
+  }
+}
+
+#bike-guy {
+  animation: bike 0.7s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes bike {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(40deg);
+  }
+}
+
+#right-wheel,
 #left-wheel {
-  animation: wheel 2s infinite linear;
+  animation: wheel 1s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -23,34 +52,5 @@ body {
   }
   to {
     transform: rotateZ(360deg);
-  }
-}
-
-#bike-guy {
-  animation: bike 1s ease-in-out infinite alternate;
-  transform-origin: bottom;
-}
-
-@keyframes bike {
-  from {
-    transform: rotateX(0deg);
-  }
-  to {
-    transform: rotateX(20deg);
-  }
-}
-
-#hat {
-  animation: hat 1s ease-in-out infinite alternate;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes hat {
-  from {
-    transform: translateY(0%) rotateZ(0deg);
-  }
-  to {
-    transform: translateY(40%) rotateZ(20deg);
   }
 }
