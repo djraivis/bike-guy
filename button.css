@@ -1,0 +1,15 @@
+button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: hsl(236deg 8% 35%);
+}
+
+a {
+    color: rgb(231, 231, 231);
+}
+
+a:hover {
+    color: black;
+    opacity: 50%;
+}

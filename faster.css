@@ -1,61 +1,56 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-size: large;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: large;
 }
 
 body {
-  text-align: center;
+    text-align: center;
 }
 
 #hat {
-  animation: hat 0.2s ease-in-out infinite alternate;
-  transform-origin: center;
-  transform-box: fill-box;
+    animation: hat 0.2s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
 }
 
 @keyframes hat {
-  from {
-    transform: translateY(-10%) rotate(-10deg)
-  }
-  to {
-    transform: translateY(60%) rotateZ(10deg);
-  }
+    from {
+        transform: translateY(-10%) rotate(-10deg);
+    }
+    to {
+        transform: translateY(60%) rotateZ(10deg);
+    }
 }
 
-
-
 #bike-guy {
-  animation: bike 0.2s ease-in-out infinite alternate;
-  transform-origin: bottom;
+    animation: bike 0.2s ease-in-out infinite alternate;
+    transform-origin: bottom;
 }
 
 @keyframes bike {
-  from {
-    transform: rotateX(0deg);
-  }
-  to {
-    transform: rotateX(40deg);
-  }
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(40deg);
+    }
 }
-
-
-
 
 #right-wheel,
 #left-wheel {
-  animation: wheel 0.5s infinite linear;
-  transform-origin: center;
-  transform-box: fill-box;
+    animation: wheel 0.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
 }
 
 @keyframes wheel {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
 }
